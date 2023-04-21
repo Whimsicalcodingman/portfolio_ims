@@ -1,0 +1,58 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poltawski Nowy', serif;
+}
+body {
+    padding:20px;
+    font-family: 'Poltawski Nowy', serif;
+    font-weight:700;
+    font-smooth: always;
+}
+header {
+    min-height:75px;
+    font-size:20px;
+    padding:20px;
+    border-bottom: solid 1px black;
+}
+header #socials ul li {
+    font-family: FontAwesome;
+    font-style: normal;
+    list-style-type:none;
+    display:inline;
+    padding:5px;
+    font-weight:400;
+}
+#profilePicture img {
+    width:75px;
+    height:75px;
+    border-radius:100%;
+}
+#mainMenu > ul > li {
+    list-style-type:none;
+    display:inline;
+    padding:5px;
+    padding:0px 20px
+}
+i {
+    font-style: normal;
+}
+body > header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+content {
+    font-family: 'Nunito', sans-serif;
+}
+#contentContainer {
+    padding:20px;
+}
+#codeTekst {
+    background:beige;
+    padding:20px;
+    color:red;
+    display:inline;
+    border-radius:10px;
+}
