@@ -1,14 +1,16 @@
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poltawski Nowy', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 body {
     padding:20px;
-    font-family: 'Poltawski Nowy', serif;
+    font-family: 'Open Sans', serif;
     font-weight:700;
     font-smooth: always;
     height:100vh;
     display: flex;
     flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 header {
     min-height:75px;
@@ -56,11 +58,14 @@ body > header {
     align-items: center;
 }
 content {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-top:125px;
 }
-#contentContainer {
-    padding:13px;
+#contentContainerMain {
+
+}
+#aboutMe, #contactForm {
+    flex-basis:50%;
 }
 #codeTekst {
     background:beige;
@@ -72,4 +77,20 @@ content {
 footer {
     margin-top:auto;
     padding:13px;
+}
+#contactForm input, #contactForm textarea {
+    height:20px;
+    color:black;
+    border-radius:0px;
+    border:solid 1px rgb(233, 233, 233);
+    display:block;
+    width:150px;
+    font-family:'Open Sans', sans-serif;
+    padding:10px;
+    margin:10px 0px;
+}
+#contactForm input[type='submit'] {
+    height:30px;
+    width:172px;
+    padding:0px;
 }

@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio website</title>
-    <link rel="stylesheet" href="mainStyles.css">
+    <title>Ims Storm van Leeuwen</title>
+    <script src="node_modules/powerglitch/dist/powerglitch.min.js"></script>
+    <link rel="stylesheet" href="/styles/mainStyles.css">
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poltawski+Nowy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <section id="profilePicture">
-            <img src="media/ims.jpg">
+            <img src="media/ims.jpg" class="some-element"/>
         </section>
         <section id="mainMenu">
             <ul>
@@ -32,12 +33,11 @@
         </section>
     </header>
     <content>
-        <div id="contentContainer">
-            <section id="About me">
+        <div id="contentContainerMain">
+            <section id="aboutMe">
                 <div>
-                    <h2><pre id="codeTekst">>> Hello world!</pre><br/></h2>
+                    <h1><pre id="codeTekst">>> Welcome to my portfolio</pre></h1>
                     <br/>
-                    <h1>Welcome to my portfolio</h1>
                     <p>
                         My name is Ims Storm van Leeuwen, and I'm a passionate front end developer with a strong desire to create beautiful and functional websites that make a positive impact in people's lives. With several years of experience in the field of web development, I'm always striving to stay up-to-date with the latest technologies and trends to deliver the best possible user experience. I believe that every website is an opportunity to tell a unique story, and I'm excited to help bring your vision to life. Feel free to take a look at my portfolio and get in touch if you have any questions or would like to work together
                     </p>
@@ -51,7 +51,9 @@
                     <input type="submit" name="submit" value="Send">
                 </form>
                 <div id="message"></div>                               
-                
+                  
+                  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                  
             </section>
         </div>
     </content>
@@ -70,6 +72,10 @@
                 </ul>
             </section>
         </div>
+        </script>
     </footer>
+    <!-- INCLUDE MANDATORY FILES -->
+    <script type="module" src="includes.js"></script>
+    <!-- END INCLUDE MANDATORY FILES -->
 </body>
 </html>
